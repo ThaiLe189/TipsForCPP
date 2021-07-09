@@ -5,9 +5,7 @@ bool compare(const cv::Rect& a, const cv::Rect& b)
     float rCell = floorf(b.y / cellSize);
     if (abs(lCell - rCell) < 10) return a.x < b.x;
     return (lCell < rCell);
-    
 };
-
 
 int main()
 {
