@@ -1,7 +1,7 @@
 bool point_comparator(const cv::Point& a, const cv::Point& b) {
     if ((a.x + a.y) == (b.x + b.y))
     	return a.x < b.x;
-	return ((a.x + a.y) < (b.x + b.y));
+    return ((a.x + a.y) < (b.x + b.y));
 }
 
 std::vector<cv::Point> sort_coor(std::vector<cv::Point> coor) {
